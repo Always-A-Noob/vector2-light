@@ -42,10 +42,10 @@ function vector2.new(x, y)
     end
  
     function self:toAngle(v)
-       return -math.atan2(v-self) - (math.pi/2)
+       return math.atan2((v-self):split())
     end
  
-    function self:split()
+    function self:unpack()
        return self.x, self.y
     end
    
