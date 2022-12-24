@@ -3,7 +3,7 @@ Light vector class in lua
 
 # Example
 ```lua
-local vector2 = require 'class.vector2'
+local vector2 = require('vector2')
 ```
 
 # Functions
