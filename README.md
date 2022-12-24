@@ -2,6 +2,7 @@
 Light vector class in lua
 
 # Example
+Require vector2 module
 ```lua
 local vector2 = require('vector2')
 ```
