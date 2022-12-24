@@ -15,7 +15,7 @@ end
 
 local mt = {
    __mode = "k",
-   __metatable = "Vector2",
+   __metatable = "vector2",
 
    __tostring = function(t) return (t.x .. ", " .. t.y) end,
    __sub = function(a, b) return vectorOperations(a, b, function(a1, b1) return vector2.new(a1.x-b1.x, a1.y-b1.y) end) end,
@@ -42,7 +42,7 @@ function vector2.new(x, y)
     end
  
     function self:toAngle(v)
-       return math.atan2((v-self):split())
+       return math.atan2((v-self):unpack())
     end
  
     function self:unpack()
