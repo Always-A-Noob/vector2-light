@@ -1,5 +1,5 @@
 # vector2-light
-Light vector class in lua
+Lightweight vector class in lua
 
 # Example
 Require vector2 module
